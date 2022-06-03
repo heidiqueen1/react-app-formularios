@@ -34,19 +34,19 @@ export default function Formulario (){
       <form className="form" onSubmit={handleSubmit} >
         <label>
           Nombre: 
-          <input type="text" value={name} onChange={cambiarNombre} required placeholder="Escribe tu nombre" />
+          <input className="espacio-de-texto" type="text" value={name} onChange={cambiarNombre} required placeholder="Escribe tu nombre" />
         </label>
         <label>
           Apellido: 
-          <input type="text" value={lastname} onChange={cambiarApellido} required placeholder="Escribe tu apellido" />
+          <input className="espacio-de-texto" type="text" value={lastname} onChange={cambiarApellido} required placeholder="Escribe tu apellido" />
         </label>
         <label>
           Número: 
-          <input type="tel"  value={number} onChange={cambiarNumero} pattern= "[0-9]{12}" placeholder="Escribe tu number"/>
+          <input className="espacio-de-texto" type="tel"  value={number} onChange={cambiarNumero} pattern= "[0-9]{10-12}" placeholder="Escribe tu número sin signo (+)"/>
         </label>
         <label>
           E-mail: 
-          <input type="email" value={email} onChange={cambiarEmail} required placeholder="Escribe tu correo"/>
+          <input className="espacio-de-texto" type="email" value={email} onChange={cambiarEmail} required placeholder="Escribe tu correo"/>
         </label>
         <button className="boton">Enviar formulario</button>
       </form>
